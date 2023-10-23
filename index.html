@@ -5,19 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyPagesNothing</title>
     <script>
+        function onbuttonpress(){
         let promptvar = "" ;
-            while (true){
+            
             promptvar = prompt("You can type an string and it will get echoed back!");
+            console.log(promptvar);
             if (promptvar == "djghasdlkjhglkshwegasrjklghsal"){
-                document.location.href="127.0.0.1/api/sendback"
-            }
-            alert(promptvar)
+                document.location.href="http://127.0.0.1/api/sendback";
+            
+            alert(promptvar);
         }
+    }
     </script>
     <link rel="manifest" href="/manifest/manifest.webmanifest">
     <link rel="icon" type="image/x-icon" href="/lionicon.png">
 </head>
 <body>
-    
+    <button onclick="onbuttonpress()">echo</button>
 </body>
 </html>
