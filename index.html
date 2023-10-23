@@ -4,7 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyPagesNothing</title>
-    <script>document.location.href="/mainpage"</script>
+    <script>
+        let promptvar = "" ;
+            while (true){
+            promptvar = prompt("You can type an string and it will get echoed back!");
+            if (promptvar == "djghasdlkjhglkshwegasrjklghsal"){
+                document.location.href="127.0.0.1/api/sendback"
+            }
+            alert(promptvar)
+        }
+    </script>
     <link rel="manifest" href="/manifest/manifest.webmanifest">
     <link rel="icon" type="image/x-icon" href="/lionicon.png">
 </head>
